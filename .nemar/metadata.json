@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG: Depression rest",
-  "description": "This dataset comprises resting-state EEG recordings from 122 college-age participants with varying levels of depressive symptoms as assessed by the Beck Depression Inventory. Participants completed two 6-minute resting sessions with eyes-open and eyes-closed conditions, with the first session occurring immediately after EEG setup and the second following approximately one hour of task performance. The data were collected between 2008-2010 and represent a valuable resource for investigating neural correlates of depression in a non-clinical college population.",
-  "methods_description": "Resting EEG data were collected in two 6-minute sessions per participant. The first session occurred immediately after EEG electrode placement, and the second session followed approximately one hour of task performance. Participants alternated between eyes-open and eyes-closed conditions in instructed one-minute spans, with trigger markers indicating condition transitions (e.g., OCCOCO or COOCOC patterns). Participants were selected based on Beck Depression Inventory scores to represent reliably high or low depression phenotypes, with some participants undergoing clinical interviews.",
+  "description": "This dataset comprises resting-state EEG recordings from 122 college-age participants with varying levels of depressive symptoms as measured by the Beck Depression Inventory. Participants completed two 6-minute resting sessions with eyes-open and eyes-closed conditions, with the first session occurring immediately after EEG setup and the second following approximately one hour of task performance. The data were collected between 2008-2010 and include clinical interview information for a subset of participants.",
+  "methods_description": "EEG data were collected during two 6-minute resting sessions per participant. The first session occurred immediately after EEG electrode placement, and the second session followed approximately one hour of task performance. Each session included alternating eyes-open and eyes-closed conditions in 1-minute blocks, with triggers marking the instructed condition spans. Participants were selected based on Beck Depression Inventory scores to represent reliably high or low depression phenotypes.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,6 +24,9 @@
     },
     {
       "term": "eyes-open eyes-closed"
+    },
+    {
+      "term": "electroencephalography"
     }
   ],
   "related_identifiers": [
