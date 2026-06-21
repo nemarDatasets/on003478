@@ -2,49 +2,13 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG: Depression rest",
+  "description": "This dataset comprises resting-state EEG recordings from 122 college-age participants with varying levels of depressive symptoms as assessed by the Beck Depression Inventory. Participants completed two 6-minute resting sessions with eyes-open and eyes-closed conditions, with the first session occurring immediately after EEG setup and the second following approximately one hour of task performance. The data were collected between 2008-2010 and represent a valuable resource for investigating neural correlates of depression in a non-clinical college population.",
+  "methods_description": "Resting EEG data were collected in two 6-minute sessions per participant. The first session occurred immediately after EEG electrode placement, and the second session followed approximately one hour of task performance. Participants alternated between eyes-open and eyes-closed conditions in instructed one-minute spans, with trigger markers indicating condition transitions (e.g., OCCOCO or COOCOC patterns). Participants were selected based on Beck Depression Inventory scores to represent reliably high or low depression phenotypes, with some participants undergoing clinical interviews.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
     "James F Cavanagh  jcavanagh@unm.edu": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds003478.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on003478",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003478",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".fdt",
-    ".gitattributes",
-    ".json",
-    ".m",
-    ".md",
-    ".rtf",
-    ".set",
-    ".tsv",
-    ".wav",
-    ".xlsx"
-  ],
-  "description": "Resting-state EEG dataset from 122 college-age participants stratified by Beck Depression Inventory scores. The dataset includes two 6-minute resting EEG sessions (eyes open and eyes closed) collected circa 2008-2010, with the first session occurring immediately after EEG setup and the second following approximately one hour of task performance. Participants were selected to represent reliably high or low depression symptomatology, with some subjects clinically interviewed. NOTE: Data quality concerns exist - HEOG and VEOG channels may be mislabeled for some subjects, some files have had channels interpolated, and the second resting session quality is undocumented. Subject 516 lacks a rest2 session. Subject 544 was excluded from original analyses due to unstable BDI scores.",
-  "methods_description": "EEG data were collected during two resting sessions: the first 6 minutes immediately after electrode placement and the second 6 minutes following task performance (approximately 1 hour later). Participants performed alternating eyes-open and eyes-closed conditions in 1-minute blocks, with triggers marking instructed spans (e.g., OCCOCO or COOCOC patterns). Data were collected in the John J.B. Allen laboratory at the University of Arizona between 2008-2010. Known limitations: HEOG and VEOG channels may be mislabeled for some subjects; some files contain interpolated channels with no raw data available for reversion; the quality of the second resting session is undocumented.",
   "keywords": [
     {
       "term": "EEG"
@@ -59,17 +23,45 @@
       "term": "Beck Depression Inventory"
     },
     {
-      "term": "eyes open"
-    },
-    {
-      "term": "eyes closed"
-    },
-    {
-      "term": "neurophysiology"
-    },
-    {
-      "term": "mood disorders"
+      "term": "eyes-open eyes-closed"
     }
   ],
-  "source_hash": "da8e02165af2e2c0b7431e93cbae6fab6a59986769a20b4f20e6e1b5fd2d5daf"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on003478",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003478",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003478.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "11.4 GB (499 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".gitattributes",
+    ".json",
+    ".m",
+    ".md",
+    ".rtf",
+    ".set",
+    ".tsv",
+    ".wav",
+    ".xlsx",
+    ".yml"
+  ],
+  "source_hash": "8cf1602396b95178526235a75c1d13637e03f494c913da668e21d02f3c8be0b4"
 }
