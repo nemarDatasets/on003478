@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG: Depression rest",
-  "description": "This dataset comprises resting-state EEG recordings from 122 college-age participants with varying levels of depressive symptoms as measured by the Beck Depression Inventory. Participants completed two 6-minute resting sessions with eyes-open and eyes-closed conditions, with the first session occurring immediately after EEG setup and the second following approximately one hour of task performance. The data were collected between 2008-2010 and include clinical interview information for a subset of participants.",
-  "methods_description": "EEG data were collected during two 6-minute resting sessions per participant. The first session occurred immediately after EEG electrode placement, and the second session followed approximately one hour of task performance. Each session included alternating eyes-open and eyes-closed conditions in 1-minute blocks, with triggers marking the instructed condition spans. Participants were selected based on Beck Depression Inventory scores to represent reliably high or low depression phenotypes.",
+  "description": "Resting-state EEG recordings from 122 college-age participants who scored reliably high or low on the Beck Depression Inventory. Recordings include eyes-open and eyes-closed one-minute blocks, collected in two 6-minute sessions, one after EEG hook-up and one after task performance. The participants overlap with those in the probabilistic selection task dataset, and the data were collected in the Allen lab at the University of Arizona.",
+  "methods_description": "Resting EEG was recorded circa 2008-2010 in the John J.B. Allen lab at the University of Arizona. The task was programmed in DMDX with instructions alternating one-minute eyes-open and eyes-closed spans (e.g., OCCOCO or COOCOC), marked by triggers. The first 6 minutes followed EEG hook-up and the second 6 minutes followed task performance about 1 hour later. Some files have interpolated channels, and HEOG and VEOG labels may be swapped.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,10 +23,10 @@
       "term": "Beck Depression Inventory"
     },
     {
-      "term": "eyes-open eyes-closed"
+      "term": "eyes open"
     },
     {
-      "term": "electroencephalography"
+      "term": "eyes closed"
     }
   ],
   "related_identifiers": [
@@ -36,14 +36,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003478",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003478.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003478",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -51,7 +51,7 @@
     "eeg"
   ],
   "sizes": [
-    "11.4 GB (499 files)"
+    "10.61 GB (499 files)"
   ],
   "formats": [
     ".fdt",
